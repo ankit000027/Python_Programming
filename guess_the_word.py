@@ -55,7 +55,7 @@ stages = [r'''
       |
 =========
 ''']
-word_list = ["aardvark", "baboon", "camel","soumili"]
+word_list = ["aardvark", "baboon", "camel"]
 
 random_word = random.choice(word_list)
 spaces = ["_"]*len(random_word)
