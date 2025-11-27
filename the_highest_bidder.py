@@ -12,9 +12,12 @@ def details():
 
 bidders = {}
 details()
+max_value= 0
+winner= ""
 
-if bidders:
-    max_val = max(bidders, key=bidders.get)
-    print(f"The bidding is won by {max_val} with the highest bid of ${bidders[max_val]}")
-else:
-    print("No bids were placed.")
+for key in bidders:
+    if bidders[key] > max_value:
+        max_value=bidders[key]
+        winner = key
+
+print(f"The winner of the bidding is {winner} with a massive bid of ${max_value}")
