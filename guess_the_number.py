@@ -1,7 +1,6 @@
 import random
 
 answer = random.randint(1, 100)
-print(answer)  # Remove this after testing
 
 easy_hard = input("Easy or Hard? ").lower()
 
@@ -12,7 +11,7 @@ def guess(attempts):
         user_answer = int(input("Guess a number between 1-100: "))
 
         if user_answer == answer:
-            print("Correct!")
+            print("Correct! 🎉")
             return True
 
         elif user_answer > answer:
@@ -22,7 +21,6 @@ def guess(attempts):
             print("Too low.")
 
     return False
-
 
 if easy_hard == "easy":
     result = guess(10)
